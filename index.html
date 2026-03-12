@@ -1,205 +1,558 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーKIKUCHIAKARI ポートフォリオ'>
+  <meta property='og:title' content='Webデザイナー 菊地朱里 ポートフォリオ'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='KIKUCHIAKARIのポートフォリオサイトです。'>
+  <meta property='og:description' content='菊地朱里のポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="KIKUCHIAKARIのポートフォリオサイトです" />
+  <meta name="description" content="菊地朱里のポートフォリオサイトです" />
   <title>KIKUCHI AKARI ポートフォリオ</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+ 
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel=”canonical” href=”URLが入る” />
+  <link rel="canonical" href="URLが入る" />
 </head>
 
 <body>
+
+
   <div class="wrapper">
 
-    <!-- header -->
-    <header class="header ">
-      <div class="container">
-        <h1 class="header-logo">
-          <a href=".">KIKUCHI AKARI</a>
-        </h1>
-        <nav class="gnav">
-          <ul class="gnav-list">
-            <li class="gnav-item"><a href="#works">WORKS</a></li>
-            <li class="gnav-item"><a href="#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- /header -->
+ 
 
-    <main class="content">
 
-      <!-- mv -->
-      <div class="mv">
-        <div class="mv-container">
-          <p class="mv-title">PORTFOLIO</p>
-          <p class="mv-subtitle">EC担当のポートフォリオ</p>
-          <p class="mv-text">
-            ECサイト運営の経験を通して、<br class="sp-only">目的に合わせた「売れるデザイン」を<br class="sp-only">意識して取り組んできました<br>
-            バナー・LP・手書きPOPなど<br class="sp-only">幅広い媒体で販促に貢献できる<br class="sp-only">デザイン制作を行っています<br>
-          </p>
-        </div>
-      </div>
-      <!-- /mv -->
+ <!-- header -->
 
-      <!-- works -->
-      <section class="works section" id="works">
+<header class="header">
+  <h1 class="header-logo">
+    <a href="#home">Akari design.</a>
+  </h1>
+
+  <!-- SP nav -->
+  <nav class="gnav">
+    <ul class="gnav-list">
+      <li class="gnav-item active"><a href="#home">HOME</a></li>
+      <li class="gnav-item"><a href="#works">Works</a></li>
+      <li class="gnav-item"><a href="#about">About</a></li>
+      <li class="gnav-item"><a href="#skill">Skill</a></li>
+      <li class="gnav-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PC nav -->
+  <nav class="gnavPC">
+    <ul class="gnavPC-list">
+      <li class="gnavPC-item active"><a href="#home">HOME</a></li>
+      <li class="gnavPC-item"><a href="#works">Works</a></li>
+      <li class="gnavPC-item"><a href="#about">About</a></li>
+      <li class="gnavPC-item"><a href="#skill">Skill</a></li>
+      <li class="gnavPC-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button type="button" id="js-btnMenu" class="btnMenu">
+    <span class="btnMenu-line"></span>
+  </button>
+</header>
+
+<!-- /header -->
+
+
+
+
+
+
+
+
+
+<main> <!-- mv -->
+<div class="mv" id="home">
+  <div class="mv-container">
+    <img src="img/mvtop.png" alt="" class="mv-img">   
+    <div class="mv-text">
+      <p><span id="typing"></span></p>
+    </div>
+  </div>
+</div>
+<!-- /mv -->
+
+
+
+
+<!-- works -->
+<section class="works section" id="works">
         <div class="container">
-          <h2 class="title">WORKS</h2>
-      
-    <div class="works-list">
-            <a class="works-item" href="works-baner01.html">
-              <div class="works-img"><img src="img/works01.jpg" alt="" /></div>
-              <p class="works-name">バナー制作（横長）</p>
-              <p class="works-info">Banner Design</p>
+          <h2 class="title">Works</h2>
+<nav class="works-nav">
+  <ul>
+    <li><a href="#web">Webサイト</a></li>
+    <li><a href="#graphic">グラフィック</a></li>
+    <li><a href="#banner">バナー制作</a></li>
+    <li><a href="#retouch">レタッチ</a></li>
+  </ul>
+</nav>
+
+<h3 id="web">Webサイト</h3>
+          <div class="works-list">
+          
+            <a class="works-item" href="works_hot.html">
+              <div class="works-img"><img src="img/work_web1.png" alt="" /></div>
+              <p class="works-name">激辛専門店の公式サイト</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
             </a>
-            <a class="works-item" href="works-baner02.html">
-              <div class="works-img"><img src="img/works02.jpg" alt="" /></div>
-              <p class="works-name">バナー制作（正方形）</p>
-              <p class="works-info">Banner Design</p>
-            </a>
-            <a class="works-item" href="works-baner03.html">
-              <div class="works-img"><img src="img/works03.jpg" alt="" /></div>
-              <p class="works-name">バナー制作（長方形）</p>
-              <p class="works-info">Banner Design</p>
-            </a>
-            <a class="works-item" href="works-lp01.html">
-              <div class="works-img"><img src="img/works04.jpg" alt="" /></div>
-              <p class="works-name">LPページデザイン（架空）</p>
+ <a class="works-item" href="works_port.html">
+              <div class="works-img"><img src="img/work_web3.png" alt="" /></div>
+              <p class="works-name">ECサイト</p>
               <p class="works-info">Design</p>
             </a>
-            <a class="works-item" href="works-lp02.html">
-              <div class="works-img"><img src="img/works05.jpg" alt="" /></div>
-              <p class="works-name">LPページデザイン（架空）</p>
-              <p class="works-info">Design</p>
+            <a class="works-item" href="works_art.html">
+              <div class="works-img"><img src="img/work_web2.png" alt="" /></div>
+              <p class="works-name">カフェ・飲食店サイト</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
             </a>
-            <a class="works-item" href="works-pop.html">
-              <div class="works-img"><img src="img/works06.jpg" alt="" /></div>
-              <p class="works-name">手書きPOP作成</p>
+           
+             <a class="works-item" href="works_car.html">
+              <div class="works-img"><img src="img/work_web4.jpg" alt="" /></div>
+              <p class="works-name">企業コーポレートサイト</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works_omu.html">
+              <div class="works-img"><img src="img/work_web5.jpg" alt="" /></div>
+              <p class="works-name">カフェ・飲食店サイト</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            
+          
+          </div>
+
+ <h3 id="graphic">グラフィック</h3>
+
+          <div class="works-list">
+            <a class="works-item" href="works_meshi.html">
+              <div class="works-img"><img src="img/work_gra1.jpg" alt="" /></div>
+              <p class="works-name">名刺デザイン</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+
+            
+            <a class="works-item" href="works_logo.html">
+              <div class="works-img"><img src="img/work_gra2.png" alt="" /></div>
+              <p class="works-name">ロゴデザイン</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="works_chira.html">
+              <div class="works-img"><img src="img/work_gra3.png" alt="" /></div>
+              <p class="works-name">イベントチラシデザイン</p>
               <p class="works-info">Design</p>
             </a>
           </div>
+
+<h3 id="banner">バナー制作</h3>
+          <div class="works-list">
+            <a class="works-item" href="work_banner1.html">
+              <div class="works-img"><img src="img/work_banner1.jpg" alt="" /></div>
+              <p class="works-name">ECセールバナー</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="work_banner2.html">
+              <div class="works-img"><img src="img/work_banner2.jpg" alt="" /></div>
+              <p class="works-name">カフェ新商品バナー</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="work_banner3.html">
+              <div class="works-img"><img src="img/work_banner3.jpg" alt="" /></div>
+              <p class="works-name">イベント告知バナー</p>
+              <p class="works-info">Design</p>
+            </a>
+          </div>
+
+<h3 id="retouch">レタッチ</h3>
+          <div class="works-list">
+            <a class="works-item" href="work_retouch1.html">
+              <div class="works-img"><img src="img/work_retouch1.jpg" alt="" /></div>
+              <p class="works-name">肌レタッチ</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="work_retouch2.html">
+              <div class="works-img"><img src="img/work_retouch2.jpg" alt="" /></div>
+              <p class="works-name">背景合成</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="work_retouch3.html">
+              <div class="works-img"><img src="img/work_retouch3.jpg" alt="" /></div>
+              <p class="works-name">不要物削除</p>
+              <p class="works-info">Design</p>
+            </a>
+          </div>
+
         </div>
       </section>
       <!-- /works -->
 
-      <!-- skill -->
-      <section class="skill section" id="skill">
-        <div class="container">
-          <h2 class="title">SKILL</h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon-01.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML5/CSS3</h3>
-                <p class="skill-text">
-                  レスポンシブデザイン、Sassの記述が可能です。 エディタは現在Dreamweaver、cloud9、Visual Studio Code の 使用経験があります。実務経験ではメルマガ制作に使用しています。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon-02.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
-                  jQueryなど、部分的に動かすような基本的なコードを 書くことができます。ユーザー操作に合わせたアニメーションや表示切替など、部分的な機能追加を中心に制作しています。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon-03.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Illustrator</h3>
-                <p class="skill-text">
-                  ロゴ作成、バナー、チラシ制作など幅広く対応可能です。
-配色やレイアウトを意識しながら、視覚的に伝わるデザインを制作しています。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon-04.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
-                  実務でページ作成・更新・ブログ投稿の管理を担当しました。テンプレート編集を含め、基本的なサイト運用に対応できます。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon-05.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Photoshop</h3>
-                <p class="skill-text">
-                  写真加工、画像合成、レタッチなどの基本操作を中心に、
-バナー制作やLPのビジュアル作成で使用しています。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_06.jpg" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">マーケティング</h3>
-                <p class="skill-text">
-                  売上向上を目的に、ユーザー分析やデータに基づく訴求ポイント設計に取り組みました。閲覧数やクリック率、季節・トレンドなどを考慮し、“誰に何をどう伝えるか” を整理した上で、購入動機を高めるコピー・レイアウト構成を行うなど、マーケティング視点を活かした制作を実践しています。
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /skill -->
 
-      <!-- about -->
-      <section class="about section" id="about">
-        <div class="container">
-          <h2 class="title">ABOUT</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="img/profile01.jpg" alt="">
-            </p>
-            <div class="profile-body">
-              <p>
-                静岡大学 教育学部 学校教育教員養成課程 教科教育学専攻 美術教育専攻を卒業後。
-                釣具専門店でEC運営と一般事務を担当。
-                デザイン制作、事務処理、店舗業務まで幅広く経験し、オンラインと現場の両面から販促に携わりました。
-              </p>
-              <p>
-RMS（楽天）、Yahoo!ショッピング、Amazonセラーセントラル、BASEを使用し、商品登録や編集、CSVを用いたデータ管理、Excel（VLOOKUP・ピボット）の活用を行ってきました。
-事務では、経理処理・書類作成・人事補佐などのバックオフィス業務を担当。
-また、店舗では売り場レイアウト、発注・入荷処理、POP制作、SNS投稿、動画編集など、幅広い業務に携わり、現場の視点を活かした訴求を常に意識して取り組んできました。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- about -->
+<section class="about" id="about">
+
+  <h2 class="title" >About</h2>
+
+  <div class="about-header">
+    <h3>Do what you love, and you'll get better at it.</h3>
+    <p class="sub">「好きこそものの上手なれ」</p>
+  </div>
+   <!-- プロフィール -->
+  <div class="profile">
+
+    <!-- 画像 -->
+    <div class="profile-img">
+      <img src="img/profile.jpg" alt="菊地朱里">
+    </div>
+
+    <!-- テキスト -->
+    <div class="profile-text">
+      <h4>菊地 朱里 | Kikuchi Akari</h4>
+
+      <p>
+        平成11年生まれ。今年の11月、結婚を期に東京都に転居しました。<br>
+        大学卒業後は釣具店のEC事務と経理担当として3年勤務しました。<br>
+        現在はWebデザインを学びながら、デザイン制作やイラスト制作を行っています。
+      </p>
+      <ul class="profile-list">
+        <li>出身地：静岡県三島市</li>
+        <li>趣味：釣り・絵を描くこと</li>
+        <li>得意：コツコツ取り組むこと</li>
+      </ul>
+    </div>
+  </div>
+
+
+   <!-- 経歴 -->
+
+<div class="about-career">
+    <h2>経　歴</h2>
+
+<h3>2022.3 静岡大学 教育学部 美術専修 卒業</h3>
+<p class="sub">
+中学校・高等学校教諭一種免許状（美術）取得
+</p>
+
+<h3>2024.9 デジタルハリウッドスクール Webデザインコース 修了</h3>
+<p class="sub">
+デジタルハリウッドスクール Webデザインコース 修了
+</p>
+
+<h3>~2025.10 有限会社東海釣り具 勤務 </h3>
+<p class="sub">
+有限会社東海釣り具 勤務<br>
+ECサイト運用・経理事務を担当
+</p>
+
+<h3>2025.11~東京へ転居</h3>
+<p class="sub">
+キクチアカリとして作家活動を開始
+</p>
+  </div>
+
+
+
+ <!-- 9つのもの -->
+
+<div class="about-pieces">
+  <p class="sub">私を作る9つのもの</p>
+</div>
+
+<div class="nine-grid">
+
+  <div class="nine-item">
+    <img src="img/9me1.jpg">
+    <p class="nine-text">art</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me2.jpg">
+    <p class="nine-text">pudding</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me3.jpg">
+    <p class="nine-text">yellow</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me4.jpg">
+    <p class="nine-text">mydog</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me5.jpg">
+    <p class="nine-text">fishing</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me6.jpg">
+    <p class="nine-text">walking</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me7.jpg">
+    <p class="nine-text">bird</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me8.jpg">
+    <p class="nine-text">camp</p>
+  </div>
+
+  <div class="nine-item">
+    <img src="img/9me9.jpg">
+    <p class="nine-text">pop</p>
+  </div>
+
+</div>
+
+
+</section>
+
       <!-- /about -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- skill -->
+<section class="skill section" id="skill">
+  <div class="container">
+    <h2 class="title">Skill</h2>
+
+    <div class="about-header">
+    <h3 class="skill-header" >Tools and skills I use to create.</h3>
+<p class="sub">制作に使用しているスキルとツール</p>
+    </div>
+
+    
+    <div class="skill-list">
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">HTML5/CSS3 <span class="skill-tag">実務経験あり</span></h3>
+          <p class="skill-text">
+            HTML5とCSS3を使用して、Webサイトのコーディングが可能です。レスポンシブデザインにも対応し、見やすく使いやすいレイアウトを意識して制作しています。
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill2.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">WordPress<span class="skill-tag">実務経験あり</span></h3>
+          <p class="skill-text">
+            WordPressを使用したサイト制作の基本操作が可能です。テーマのカスタマイズや記事投稿など、運用を意識したサイト作りを行っています。
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill3.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-text">
+            JavaScriptを使い、簡単な動きやインタラクションの実装が可能です。ユーザーにとって心地よい動きを取り入れたWebページ制作を心がけています。
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill4.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">Photoshop<span class="skill-tag">実務経験あり</span></h3>
+          <p class="skill-text">
+            Photoshopを使用した画像編集やバナー制作が可能です。色調補正やレタッチなど、Web掲載に適した画像加工を行っています。
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill5.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">Illustrator<span class="skill-tag">実務経験あり</span></h3>
+          <p class="skill-text">
+            Illustratorを使用して、ロゴや簡単なイラスト、アイコン制作が可能です。デザインの統一感を意識した制作を行っています。
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill6.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">Figma</h3>
+          <p class="skill-text">
+            Figmaを使用してワイヤーフレームやデザインカンプの制作が可能です。チームでの共有やフィードバックを意識したデザイン作成を行っています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skill -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- contact -->
       <section class="contact section" id="contact">
         <div class="container">
-          <h2 class="title">CONTACT</h2>
+          <h2 class="title">Contact</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only">こちらから
+            お問い合わせは、<br class="sp-only">こちらにてお待ちしております。
           </p>
           <div class="contact-list">
-        
-            <a class="contact-item" href=https://www.instagram.com/turipyooon?igsh=MTByYnN1dmNvYWNp&utm_source=qr target="_blank" rel="noopener">Instagram</a>
-            <span class="contact-item">kikuchi.akari0715@gmail.com　070-1442-8814</span>
+  <span class="contact-item">kikuchi.akari0715@gmail.com</span>
+            <span class="contact-item">070-1442-8814</span>
           </div>
         </div>
       </section>
       <!-- /contact -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">⇧⇧⇧
+        </span>
       </div>
-    </main>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+    
 
     <!-- footer -->
     <footer class="footer">
@@ -211,5 +564,4 @@ RMS（楽天）、Yahoo!ショッピング、Amazonセラーセントラル、BA
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
-
 </html>
